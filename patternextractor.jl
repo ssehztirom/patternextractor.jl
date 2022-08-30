@@ -38,7 +38,7 @@ function dichotomize(x;selquantile=0.5)
 end
 
 
-function evaluatevariable(curset,i,visible_training,hidden_training,visible_test,hidden_test,evolution=false)
+function evaluatevariable(curset,i,visible_training,hidden_training,visible_test,hidden_test,evolution=true)
 	h = size(hidden_training.data)[2]
 	scores = zeros(h)
 	curx_train = initcurx(curset,visible_training)
@@ -59,7 +59,7 @@ function evaluatevariable(curset,i,visible_training,hidden_training,visible_test
 	return scores
 end
 
-function select_k_variables(kvariables,sampleset;testtraining=false,newdata=nothing,verbose=true,evolution=false)
+function select_k_variables(kvariables,sampleset;testtraining=false,newdata=nothing,verbose=true,evolution=true)
 	if length(sampleset)==0
 		println("sample set is empty")
 		error()
