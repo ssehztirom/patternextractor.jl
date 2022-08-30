@@ -2,7 +2,7 @@ module PatternExtractor
 
 import LogLinearModels
 
-export select_k_variables, annotatesamplesbypattern
+export extrat_pattern, annotatesamplesbypattern
 include("stepwise.jl")
 
 end # module PatternExtractor
