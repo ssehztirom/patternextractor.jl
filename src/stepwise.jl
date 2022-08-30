@@ -53,7 +53,7 @@ function evaluatevariable(curset,i,visible_training,hidden_training,visible_test
 end
 
 function extract_pattern(kvariables,xs,zs)
-	return select_k_variables(kvariables,[converttoleveldata([xsbin,zsbin])])
+	return select_k_variables(kvariables,[converttoleveldata([xs,zs])])
 end
 
 function select_k_variables(kvariables,sampleset;testtraining=false,newdata=nothing,verbose=true,evolution=true)
