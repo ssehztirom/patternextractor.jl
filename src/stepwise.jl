@@ -28,14 +28,7 @@ end
     end
 end
 
-function dichotomize(x;selquantile=0.5)
-	n,p=size(x)
-	dicho = zeros(n,p)
-	for i=1:p
-		dicho[:,i] = ifelse.(x[:,i] .>quantile(x[:,i],selquantile),1.0,0.0)
-	end
-	return dicho
-end
+
 
 
 function evaluatevariable(curset,i,visible_training,hidden_training,visible_test,hidden_test,evolution=true)
