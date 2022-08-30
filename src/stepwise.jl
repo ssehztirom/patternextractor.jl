@@ -52,6 +52,10 @@ function evaluatevariable(curset,i,visible_training,hidden_training,visible_test
 	return scores
 end
 
+function extract_pattern(kvariables,xs,zs)
+	return select_k_variables(kvariables,[converttoleveldata([xsbin,zsbin])])
+end
+
 function select_k_variables(kvariables,sampleset;testtraining=false,newdata=nothing,verbose=true,evolution=true)
 	if length(sampleset)==0
 		println("sample set is empty")
