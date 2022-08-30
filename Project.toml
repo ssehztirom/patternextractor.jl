@@ -1,0 +1,7 @@
+name = "PatternExtractor"
+uuid = "021be188-2099-400a-a1a3-6f0c0d284600"
+authors = ["Moritz Hess <hess@imbi.uni-freiburg.de>"]
+version = "0.1.0"
+
+[deps]
+LogLinearModels = "a6fe36b8-2c63-11e9-27e7-4748cfc3a0e4"

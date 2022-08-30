@@ -1,0 +1,12 @@
+# This file is machine-generated - editing it directly is not advised
+
+julia_version = "1.8.0"
+manifest_format = "2.0"
+project_hash = "01781ca36652a68dae0bee0abefa794e4a45754d"
+
+[[deps.LogLinearModels]]
+git-tree-sha1 = "804ab919ea3fc0cc241c9d0d9def1b3c19eda9d6"
+repo-rev = "master"
+repo-url = "https://github.com/ssehztirom/LogLinearModels.jl"
+uuid = "a6fe36b8-2c63-11e9-27e7-4748cfc3a0e4"
+version = "0.1.0"
